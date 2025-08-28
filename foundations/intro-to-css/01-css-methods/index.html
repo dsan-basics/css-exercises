@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methods for Adding CSS</title>
+    <!-- for external css styling, remember to link the file using the relationship tag so it can be found -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- for internal css styling, remember to place styling rules in the head, and in style tags -->
+    <style>
+      p {
+        background-color: green;
+        color: white;
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
+    <!-- external css styling means using a separate css file and linking it -->
     <div>Style me via the external method!</div>
+    <!-- internal styling rules are defined in the head -->
     <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+    <!-- inline css styling is embedded in html. it doesnt use selectors; the styling is added with the style attribute in the opening tag -->
+    <button style="background-color: orange; font-size: 18px;">Inline Method</button>
   </body>
 </html>
